@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Row 1: Profile Header */
+        .header-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        /* Row 2: Lists */
+        .list-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        /* Row 3: Table */
+        .table-row {
+            margin-top: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Row 4: Contacts */
+        .contact-row {
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .contact-row a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .contact-row i {
+            margin-right: 8px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header-row">
+        <img src="Jordan.JPG" alt="Profile Picture" class="profile-pic">
+        <div>
+            <h1>OKISAI JORDAN</h1>
+            <p>I am a passionate software developer currently studying Information Technology and Computing at Kyambogo University. I love building web applications that solve real-world problems.</p>
+        </div>
+    </div>
+
+    <div class="list-row">
+        <div class="column">
+            <h3>Education </h3>
+            <ol>
+                <li>Kyambogo University, BITC, 2024-2027</li>
+                <li>St.Mary's Kitende, 2022-2023</li>
+                <li>St.Mary's Kitende, 2018-2022</li>
+            </ol>
+        </div>
+        <div class="column">
+            <h3>Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>System Administration</li>
+                <li>Database Management</li>
+            </ul>
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Music</li>
+                <li>Travel</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="table-row">
+        <h3>Current Semester Courses</h3>
+        <table>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Lecturer</th>
+            </tr>
+            <tr>
+                <td>SCS  2201</td>
+                <td>Operating Systems Implementation</td>
+                <td>Mr. Nkalubo Leonald</td>
+            </tr>
+            <tr>
+                <td>SCS 2204</td>
+                <td>Software Engineering</td>
+                <td>Dr. Beatrice Aguti</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contact-row">
+        <a href="#"><i class="fab fa-whatsapp"></i>WhatsApp <b>0770465616</b></a>
+        <a href="#"><i class="fab fa-facebook"></i>Facebook <b>Michael Jordan</b></a>
+    </div>
+
+</div>
+
+</body>
+</html>
